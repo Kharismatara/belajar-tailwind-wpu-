@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            spacing: {
+              13: "3.25rem",
+            },
+          },
+        },
+      };
+    </script>
+    <title>belajar tailwind</title>
+    <style type="text/tailwindcss">
+      * {
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>mari belajar tailwind</h1>
+
+    <section class="mb-10">
+      <h2>Spacing</h2>
+      <div class="m-13">margin</div>
+      <div class="p-8">pading</div>
+    </section>
+
+    <section class="mb-10">
+      <h2>Sizing</h2>
+      <div class="w-32 h-32">aku1</div>
+      <div class="max-w-xs min-h-screen">aku 2</div>
+    </section>
+  </body>
+</html>
