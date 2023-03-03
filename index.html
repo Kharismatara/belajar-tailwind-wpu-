@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200&family=Inter:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -12,22 +15,25 @@
             spacing: {
               13: "3.25rem",
             },
+            fontFamily: {
+              inter: ["Inter"],
+            },
+            colors: {
+              tara: "#bada55",
+              tail: "#78dcca",
+            },
           },
         },
       };
     </script>
     <title>belajar tailwind</title>
-    <style type="text/tailwindcss">
-      * {
-        border: 1px solid red;
-      }
-    </style>
+    <style type="text/tailwindcss"></style>
   </head>
   <body>
-    <h1>mari belajar tailwind</h1>
+    <h1 class="text-5xl text-center font-extrabold bg-indigo-100">mari belajar tailwind</h1>
 
     <section class="mb-10">
-      <h2>Spacing</h2>
+      <h2 class="text-right text-emerald-300">Spacing</h2>
       <div class="m-13">margin</div>
       <div class="p-8">pading</div>
     </section>
@@ -36,6 +42,24 @@
       <h2>Sizing</h2>
       <div class="w-32 h-32">aku1</div>
       <div class="max-w-xs min-h-screen">aku 2</div>
+    </section>
+
+    <section class="mb-96 font-inter max-w-3xl mx-auto">
+      <h2 class="text-gray-500 bg-blue-300 text-center">typoografi</h2>
+      <h3 class="mb-3 text-2xl font-bold text-rose-400">Belajar typhografi dengan tailwind</h3>
+      <p class="mb-3">
+        Lorem, ipsum <a href="#" class="italic hover:not-italic font-semibold"> dolor</a> sit amet consectetur adipisicing elit. Exercitationem eius, qui autem officiis natus atque fugiat doloremque, voluptatibus assumenda maiores nihil
+        expedita facere molestias incidunt dolore, hic laudantium recusandae magni tempora ad est distinctio fuga dolorum omnis! Nostrum itaque amet reprehenderit eius. Maxime ullam voluptatem vel vitae explicabo amet nisi.
+      </p>
+      <p class="mb-3 italic bg-tara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut ratione a magnam quos quibusdam, doloremque officiis in magni eos expedita!</p>
+      <p class="mb-3 text-tail">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab eligendi a quia veniam, iure numquam consequuntur reprehenderit maiores corporis ex atque minus rerum? Dolorum enim soluta magni nam obcaecati sint!
+      </p>
+      <p class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error cupiditate ipsa assumenda optio ipsam ipsum recusandae et, laborum culpa a doloribus, minus facilis. Maxime reprehenderit, cumque soluta, adipisci assumenda esse
+        blanditiis vero quo quibusdam sequi quasi ullam hic iure nihil sit quae laudantium nobis magni consectetur saepe debitis? Repellendus dignissimos cum ut dolore esse maxime, expedita unde totam sint ipsum veritatis enim pariatur
+        dolorum obcaecati recusandae non veniam mollitia alias!
+      </p>
     </section>
   </body>
 </html>
